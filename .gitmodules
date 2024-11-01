@@ -1,0 +1,3 @@
+[submodule "MightyHID"]
+	path = MightyHID
+	url = https://github.com/OrnarasUS/MightyHID.git

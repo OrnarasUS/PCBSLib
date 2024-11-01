@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props"
+            Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')"/>
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{4ED0E05F-254D-4515-B2E4-62D28FDA2103}</ProjectGuid>
+        <OutputType>Library</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>PCBSLib</RootNamespace>
+        <AssemblyName>PCBSLib</AssemblyName>
+        <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+        <FileAlignment>512</FileAlignment>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="System"/>
+        <Reference Include="System.Core"/>
+        <Reference Include="System.Data"/>
+        <Reference Include="System.Xml"/>
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Device.cs" />
+        <Compile Include="Properties\AssemblyInfo.cs"/>
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\..\RiderProjects\MightyHID\MightyHID\MightyHID\MightyHID.csproj">
+        <Project>{268f42f3-cd13-40cd-9059-6515a3265aef}</Project>
+        <Name>MightyHID</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\MightyHID\MightyHID.csproj">
+        <Project>{268f42f3-cd13-40cd-9059-6515a3265aef}</Project>
+        <Name>MightyHID</Name>
+      </ProjectReference>
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
+    <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+         Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+    -->
+
+</Project>

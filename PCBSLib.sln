@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PCBSLib", "PCBSLib\PCBSLib.csproj", "{4ED0E05F-254D-4515-B2E4-62D28FDA2103}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MightyHID", "MightyHID\MightyHID.csproj", "{268F42F3-CD13-40CD-9059-6515A3265AEF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4ED0E05F-254D-4515-B2E4-62D28FDA2103}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ED0E05F-254D-4515-B2E4-62D28FDA2103}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ED0E05F-254D-4515-B2E4-62D28FDA2103}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ED0E05F-254D-4515-B2E4-62D28FDA2103}.Release|Any CPU.Build.0 = Release|Any CPU
+		{268F42F3-CD13-40CD-9059-6515A3265AEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{268F42F3-CD13-40CD-9059-6515A3265AEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{268F42F3-CD13-40CD-9059-6515A3265AEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{268F42F3-CD13-40CD-9059-6515A3265AEF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
